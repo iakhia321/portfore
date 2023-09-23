@@ -1,25 +1,21 @@
-// import png from "./../img/projects/png1.png"
-// import png from "./../img/projects/png2.png"
+import Project from "../components/project/Project";
+import { projects } from "../helpers/projectsList";
+
 
 
 const Projects = () => {
     return ( 
     <main className="section">
-    <div className="container">
+      <div className="container">
         <h2 className="title-1">Projects</h2>
         <ul className="projects">
-            <li className="project">
-                <a href="./project-page.html">
-                    <img src="png" alt="Project img" className="project__img" />
-                    <h3 className="project__title">Typing game</h3>
-                </a>
-            </li>
-            <li className="project">
-                <a href="./project-page.html">
-                    <img src="png" alt="Project img" className="project__img" />
-                    <h3 className="project__title">Typing game</h3>
-                </a>
-            </li>
+
+            {projects.map((project) => {
+                return <Project title={project.title} img={project.img} />;
+            })}
+
+            <Project />
+            <Project />
 
         </ul>
     </div>

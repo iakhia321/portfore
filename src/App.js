@@ -3,7 +3,8 @@ import "./styles/reset.css"
 
 import Navi from "./components/navi/Navi";
 import Footer from "./components/footer/Footer";
-import Home from "./pages/Home";
+// import Contacts from "./pages/contacts";
+// import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 
 function App() {
@@ -11,9 +12,10 @@ function App() {
     <div className="App">
 
     <Navi/>
-    <Home/>
+    {/* <Home/> */}
     <Projects/>
     <Footer/>
+    {/* <Contacts/> */}
 
     </div>
   );
